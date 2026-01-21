@@ -183,40 +183,52 @@ E6 2JA</p>
 </footer>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("y").textContent = new Date().getFullYear();
 
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.style.display = (mobileMenu.style.display === "block") ? "none" : "block";
-    });
-    mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileMenu.style.display="none"));
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.style.display = (mobileMenu.style.display === "block") ? "none" : "block";
+  });
+  mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileMenu.style.display="none"));
 
-    document.getElementById("leadForm").addEventListener("submit", (e) => {
-      e.preventDefault();
-      const fd = new FormData(e.target);
-      const nm = fd.get("name") || "";
-      const co = fd.get("company") || "";
-      const em = fd.get("email") || "";
-      const msg = fd.get("msg") || "";
-      const body =
+  // ✅ Step 1: mailto-based pilot request (no server / no cloud)
+  const form = document.getElementById("leadForm");
+  const hint = form.querySelector(".hint");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const fd = new FormData(form);
+    const name = String(fd.get("name") || "").trim();
+    const company = String(fd.get("company") || "").trim();
+    const email = String(fd.get("email") || "").trim();
+    const msg = String(fd.get("msg") || "").trim();
+
+    const subject = encodeURIComponent("NeuroChoice Pilot Request");
+    const body = encodeURIComponent(
 `Hello NeuroChoice Team,
 
-My name is ${nm} from ${co}. We are interested in running a NeuroChoice™ in-store pilot.
+I would like to request an in-store pilot.
 
-Contact email: ${em}
+Name: ${name}
+Company: ${company}
+Email: ${email}
 
-Notes:
-${msg}
+Store/Pilot details:
+${msg || "(not provided)"}
 
 Best regards,
-${nm}`;
-      alert("Email draft generated. Copy/paste into your email client:
+${name}`
+    );
 
-Subject: NeuroChoice pilot request
+    // Update UX text (optional)
+    if (hint) hint.textContent = "Opening your email client… please click Send to submit your request.";
 
-" + body);
-    });
-  </script>
+    // Open user's email client
+    window.location.href = `mailto:info@neurochoice.uk?subject=${subject}&body=${body}`;
+  });
+</script>
+
 </body>
 </html>
