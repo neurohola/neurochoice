@@ -1,234 +1,371 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NeuroChoice™ — In-Store Decision Intelligence</title>
-  <meta name="description" content="NeuroChoice™ helps shoppers decide faster and retailers convert more — using a guided, non-medical P300 preference experience." />
-  <meta name="theme-color" content="#0B1220" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroChoice | Decision Intelligence for Luxury Retail</title>
+  <meta name="description" content="NeuroChoice helps luxury retailers convert high-intent visitors with a guided in-store decision experience built around the unified DOT brand." />
+  <meta name="theme-color" content="#111111" />
+  <meta property="og:title" content="NeuroChoice | Decision Intelligence for Luxury Retail" />
+  <meta property="og:description" content="Unified DOT experiences for luxury retail pilots, investor conversations, and premium in-store decision journeys." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./images/scenario-storyboard.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="ambient" aria-hidden="true"></div>
+
   <header>
-    <div class="container top">
-      <div class="logo"><span class="mark"></span><span class="name">NeuroChoice™</span></div>
-      <nav>
-        <a href="#about">About</a>
+    <div class="container topbar">
+      <a class="brand" href="#top" aria-label="NeuroChoice home">
+        <span class="brand-mark"></span>
+        <span class="brand-name">NeuroChoice</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#why">Why now</a>
         <a href="#products">Products</a>
-        <a href="#how">How it works </a>
-        <a href="#hardware">Hardware</a>
-        <a href="#contact" class="btn small">Contact</a>
+        <a href="#narratives">Narratives</a>
+        <a href="#pilot">Pilot plan</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
       </nav>
-      <button class="hamburger" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
     </div>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#why">Why now</a>
+      <a href="#products">Products</a>
+      <a href="#narratives">Narratives</a>
+      <a href="#pilot">Pilot plan</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <div class="mobileMenu" id="mobileMenu">
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#how">How it works </a>
-    <a href="#hardware">Hardware</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <main>
-    <section class="hero" id="top">
-      <div class="heroBg"></div>
-      <div class="container heroInner">
-        <div>
-          <div class="badge">In-store • Offline • No cloud required</div>
-          <h1>A <span class="grad">pilot‑ready</span> neural decision experience for luxury retail.</h1>
+  <main id="main-content">
+    <section id="top" class="hero section">
+      <div class="container hero-grid">
+        <div data-reveal>
+          <p class="eyebrow">Built for venture scale and luxury store execution</p>
+          <h1>Decision infrastructure for the next decade of luxury retail.</h1>
           <p class="lead">
-            NeuroChoice™ is a patent‑pending in‑store decision concept: customers compare products, run a short guided session,
-            and receive a ranked recommendation with confidence — designed for high-consideration purchases.
+            NeuroChoice turns high-consideration shopping into a measurable conversion system. Customers complete a short guided session and receive a ranked recommendation, while stores gain uplift data and repeatable in-store workflow.
           </p>
-          <div class="cta">
-            <a class="btn" href="#contact">Request a pilot (limited)</a>
-            <a class="btn ghost" href="#products">Explore formats</a>
+          <div class="cta-row">
+            <a href="https://www.linkedin.com/company/neurochoice" target="_blank" rel="noopener noreferrer" class="btn">Contact on LinkedIn</a>
+            <a href="#pilot" class="btn btn-ghost">View pilot blueprint</a>
+          </div>
+          <div class="hero-notes">
+            <span>Offline-first architecture</span>
+            <span>Premium brand-safe UI</span>
+            <span>No cloud dependency in store</span>
           </div>
         </div>
 
-        <div class="card">
-          <div class="cardHead">
-            <div class="chip">Storefront ad</div>
-            <div class="chip chipOk">NeuroChoice™ Ready</div>
+        <aside class="hero-card" data-reveal>
+          <div class="card-head">
+            <p>Store narrative</p>
+            <span>Pilot-ready</span>
           </div>
-          <img class="img" src="./adv.jpg" alt="NeuroChoice in-store advertisement and customer journey" />
-          <div class="imgCaption">Bespoke kiosk + guided session + clear outcome. Ideal for watches, jewelry, audio, eyewear, fashion and premium electronics.</div>
+          <img src="./images/adv.jpg" alt="NeuroChoice in-store premium retail concept" class="media" fetchpriority="high" />
+          <p class="card-copy">
+            Designed for watches, jewelry, fashion, eyewear, and premium electronics where confidence and storytelling drive purchase decisions.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Dual-sided value proposition</p>
+          <h2>Structured to satisfy both capital markets and flagship stores.</h2>
+        </div>
+
+        <div class="grid two" data-reveal>
+          <article class="panel">
+            <h3>For VC partners</h3>
+            <ul>
+              <li>Category-creating retail intelligence layer with defensible data moat.</li>
+              <li>SaaS + hardware + support mix enables recurring revenue and expansion economics.</li>
+              <li>Clear enterprise wedge through pilot-to-rollout contracts in premium retail chains.</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h3>For luxury retailers</h3>
+            <ul>
+              <li>Higher confidence at point-of-sale for complex, high-ticket product choices.</li>
+              <li>Staff-assisted flow that complements clienteling, not replaces it.</li>
+              <li>Branded kiosk formats that match store aesthetics and service standards.</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <section id="products" class="section section-alt">
       <div class="container">
-        <h2>About NeuroChoice™</h2>
-        <p class="sub">
-          NeuroChoice™ builds in-store decision infrastructure that helps shoppers choose with confidence when options are complex.
-          The system combines a retail-friendly kiosk workflow with dry-EEG readiness and a short P300-style session to produce
-          a ranked recommendation and confidence score — designed for premium retail environments.
-        </p>
-
-        <div class="grid3">
-          <div class="panel">
-            <h3>What we deliver</h3>
-            <p>Branded kiosks + software that retailers can deploy quickly, with offline catalog tools and staff-assisted or self-service flows.</p>
-          </div>
-          <div class="panel">
-            <h3>How we work</h3>
-            <p>Hardware-agnostic integrations (OpenBCI, Emotiv, LSL/Muse and OEM headsets) via a simple bridge interface.</p>
-          </div>
-          <div class="panel">
-            <h3>Where it fits</h3>
-            <p>Luxury and high-consideration categories: watches, jewelry, audio, eyewear, fashion, furniture, and premium electronics.</p>
-          </div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Unified DOT product line</p>
+          <h2>One iconic form factor, multiple premium finishes.</h2>
         </div>
 
-        <div class="callout">
-          <div>
-            <h3>Ready for pilots</h3>
-            <p>Deploy one kiosk in-store and measure conversion lift, dwell time, and return-rate impact.</p>
-          </div>
-          <a class="btn ghost" href="#contact">Talk to us</a>
+        <div class="grid three product-grid">
+          <article class="panel product-card" data-reveal>
+            <p class="product-tag">DOT NOIR</p>
+            <h3>Black body with warm gold light</h3>
+            <p>Statement finish for darker flagship interiors and high-contrast visual merchandising zones.</p>
+          </article>
+
+          <article class="panel product-card" data-reveal>
+            <p class="product-tag">DOT SILVER</p>
+            <h3>Silver body with cool white accent</h3>
+            <p>Clean luxury finish with crisp lighting, ideal for contemporary watch, audio, and eyewear floors.</p>
+          </article>
+
+          <article class="panel product-card" data-reveal>
+            <p class="product-tag">DOT SILVER AMBER</p>
+            <h3>Silver body with warm halo accent</h3>
+            <p>Hybrid finish that matches warmer material palettes while preserving the unified DOT silhouette.</p>
+          </article>
         </div>
-      </div>
-    </section>
 
-    <section id="products" class="alt">
-      <div class="container">
-        <h2>Product formats (Proposed - Not Finalized) </h2>
-        <p class="sub">Choose the right footprint for your store: compact stands, halo walls, private arc booths, desks, mirrors, or mobile carts.</p>
-        <img class="img" src="./products.jpg" alt="NeuroChoice kiosk product lineup" />
-        <div class="imgCaption">Formats shown: NeuroChoice One • Halo • Arc • Desk • Mirror • Mobile Cart</div>
-      </div>
-    </section>
+        <div class="dot-gallery" data-reveal>
+          <figure class="dot-item">
+            <img src="./images/dot-noir.jpg" alt="DOT Noir in black finish with warm gold halo lighting" class="media dot-image lightbox-trigger" loading="lazy" decoding="async" tabindex="0" role="button" aria-haspopup="dialog" />
+            <figcaption>DOT Noir | Black body | Warm gold light.</figcaption>
+          </figure>
+          <figure class="dot-item">
+            <img src="./images/dot-silver-cool.jpg" alt="DOT Silver in brushed silver finish with cool halo lighting" class="media dot-image lightbox-trigger" loading="lazy" decoding="async" tabindex="0" role="button" aria-haspopup="dialog" />
+            <figcaption>DOT Silver | Brushed silver | Cool white light.</figcaption>
+          </figure>
+          <figure class="dot-item">
+            <img src="./images/dot-silver-amber.jpg" alt="DOT Silver Amber in brushed silver finish with warm halo lighting" class="media dot-image lightbox-trigger" loading="lazy" decoding="async" tabindex="0" role="button" aria-haspopup="dialog" />
+            <figcaption>DOT Silver Amber | Brushed silver | Warm halo light.</figcaption>
+          </figure>
+        </div>
 
-    <section id="how">
-      <div class="container">
-        <h2>How it works </h2>
-        <div class="grid3">
-          <div class="panel">
-            <h3>1) Add items</h3>
-            <p>Staff or customer selects items to compare. Catalog loads offline (USB JSON or QR payload). No cloud needed.</p>
+        <div class="dot-showcase" data-reveal>
+          <div class="dot-copy">
+            <h3>DOT in motion</h3>
+            <p>The unified DOT brand standardizes store presence, headset bay architecture, and display geometry across all deployments.</p>
           </div>
-          <div class="panel">
-            <h3>2) Guided session</h3>
-            <p>Images flash in randomized order. Markers align EEG epochs for ERP scoring (P300-style).</p>
-          </div>
-          <div class="panel">
-            <h3>3) Rank & recommend</h3>
-            <p>The kiosk displays a winner, runner-up and confidence indicator. Optional session export for staff.</p>
-          </div>
+          <video class="dot-video" controls muted loop playsinline preload="metadata">
+            <source src="./media/unified-dot.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
 
-    <section id="hardware" class="alt">
+    <section id="narratives" class="section">
       <div class="container">
-        <h2>Hardware-ready</h2>
-        <p class="sub">NeuroChoice™ supports multiple EEG options through a unified adapter layer.</p>
-
-        <div class="table">
-          <div class="row head"><div>Category</div><div>Examples</div><div>Notes</div></div>
-          <div class="row"><div>Open platform</div><div>OpenBCI Cyton</div><div>Best for pilots; reliable raw EEG streaming + markers.</div></div>
-          <div class="row"><div>Dry EEG retail</div><div>OEM private-label</div><div>Fast setup, hygienic tips, built for repeated public use.</div></div>
-          <div class="row"><div>Consumer</div><div>Emotiv, Muse/LSL (where permitted)</div><div>Integration depends on vendor SDK/licensing.</div></div>
-    
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Visual narratives</p>
+          <h2>In-store decision journey based on curated DOT scenarios.</h2>
         </div>
-      </div>
-    </section>
 
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="grid2">
-          <div class="panel">
-            <h3>Office</h3>
-            <p style="white-space:pre-line;margin:0;color:var(--text)">
-NeuroChoice
-Office 16646
-182-184 High Street North
-East Ham
-London
-E6 2JA</p>
+        <figure class="narrative-board panel" data-reveal>
+          <img src="./images/scenario-storyboard.jpg" alt="DOT storyboard showing curate, stimulate, and resolve steps in a luxury watch consultation" class="media narrative-image" loading="lazy" decoding="async" />
+          <figcaption>Storyboard flow: Curate -> Stimulate -> Resolve.</figcaption>
+        </figure>
 
-            <div class="contactMeta">
-              <div><span class="contactMeta__k">Email</span> <span class="contactMeta__v">info@neurochoice.uk</span></div>
-              <div><span class="contactMeta__k">Business hours</span> <span class="contactMeta__v">Mon–Fri, 9:00–18:00 (UK)</span></div>
+        <div class="grid two narrative-scenes">
+          <article class="panel narrative-scene" data-reveal>
+            <img src="./images/scenario-watches.jpg" alt="Watch consultation scenario with DOT Noir kiosk and associate presenting watch options" class="media scene-media" loading="lazy" decoding="async" />
+            <div class="scene-copy">
+              <p class="product-tag">WATCHES</p>
+              <h3>Curate watch options with DOT Noir presence</h3>
+              <p class="muted">Associate-led comparison in a premium dark environment, guiding the client from tray selection to final confidence.</p>
             </div>
+          </article>
 
-            <p class="sub" style="margin-top:14px">For pilots, partnerships, or OEM manufacturing inquiries, email us with your store category and preferred kiosk format.</p>
-          </div>
+          <article class="panel narrative-scene" data-reveal>
+            <img src="./images/scenario-jewelry.jpg" alt="Jewelry consultation scenario with DOT Silver kiosk and client comparing jewelry options" class="media scene-media" loading="lazy" decoding="async" />
+            <div class="scene-copy">
+              <p class="product-tag">JEWELRY</p>
+              <h3>Stimulate and resolve jewelry selection journey</h3>
+              <p class="muted">Calm luxury setting where DOT supports emotional certainty and helps complete matching set decisions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <form class="panel" id="leadForm">
-            <h3>Request a pilot (limited)</h3>
-            <label>Name <input name="name" required placeholder="Your name" /></label>
-            <label>Company <input name="company" required placeholder="Retailer / brand" /></label>
-            <label>Email <input name="email" type="email" required placeholder="name@company.com" /></label>
-            <label>Message <textarea name="msg" rows="4" placeholder="Category + number of stores + preferred format (One/Halo/Arc/Desk/Mirror/Cart)"></textarea></label>
-            <button class="btn" type="submit">Request a pilot</button>
-            <div class="hint">Pilot requests are reviewed manually. You will be contacted by email.</div>
-          </form>
+    <section id="pilot" class="section section-alt">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Pilot blueprint</p>
+          <h2>From first install to board-ready KPI reporting.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <p class="phase">Weeks 1-2</p>
+            <h3>Design and integration</h3>
+            <p>Finalize category, product library, and store narrative. Connect selected EEG adapter and perform on-floor QA.</p>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <p class="phase">Weeks 3-6</p>
+            <h3>Live pilot</h3>
+            <p>Run guided sessions with store staff. Capture conversion delta, dwell time, and recommendation acceptance trends.</p>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <p class="phase">Week 7</p>
+            <h3>Decision package</h3>
+            <p>Deliver executive summary for rollout decisions with commercial scenarios by store tier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Pilot proof framework</p>
+          <h2>Board-ready KPI structure for every store deployment.</h2>
+        </div>
+
+        <div class="grid three kpi-grid">
+          <article class="panel kpi-card" data-reveal>
+            <p class="kpi-label">Conversion Uplift</p>
+            <p class="kpi-value">TBD</p>
+            <p class="muted">Baseline conversion vs DOT-guided sessions across the same category and period.</p>
+          </article>
+          <article class="panel kpi-card" data-reveal>
+            <p class="kpi-label">Decision Time</p>
+            <p class="kpi-value">TBD</p>
+            <p class="muted">Average time-to-purchase from first comparison to final selection at point of sale.</p>
+          </article>
+          <article class="panel kpi-card" data-reveal>
+            <p class="kpi-label">Attachment Rate</p>
+            <p class="kpi-value">TBD</p>
+            <p class="muted">Add-on and set-completion uplift for matching products after DOT recommendation.</p>
+          </article>
+        </div>
+
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2>Start a pilot or request investor materials.</h2>
+        </div>
+
+        <div class="grid two">
+          <article class="panel" data-reveal>
+            <h3>NeuroChoice</h3>
+            <p class="address">Office 16646<br />182-184 High Street North<br />East Ham, London E6 2JA<br />United Kingdom</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/company/neurochoice</p>
+            <p><strong>Hours:</strong> Monday to Friday, 09:00-18:00 (UK)</p>
+            <p class="muted">Please contact us via LinkedIn for pilot requests, investor materials, and partnerships.</p>
+          </article>
+
+          <article class="panel" data-reveal>
+            <h3>Contact us on LinkedIn</h3>
+            <p class="muted">Use our official LinkedIn page to start the conversation with the NeuroChoice team.</p>
+            <p>
+              <a class="btn" href="https://www.linkedin.com/company/neurochoice" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+            </p>
+            <p class="muted">Include your store category, number of locations, and target deployment timeline.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">© <span id="y"></span> NeuroChoice. <a href="#about">About</a> • <a href="#contact">Contact</a></div>
-  
-<div style="margin-top:10px;font-size:12px;color:#9CA3AF">
-© NeuroChoice™ — Patent pending (PCT filed). Technology under development. No medical or diagnostic claims.
-</div>
+  <a class="mobile-sticky-cta" href="https://www.linkedin.com/company/neurochoice" target="_blank" rel="noopener noreferrer">Contact on LinkedIn</a>
 
-</footer>
+  <footer>
+    <div class="container footer-inner">
+      <p>(c) <span id="year"></span> NeuroChoice</p>
+      <p>Decision intelligence for premium commerce.</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Expanded product image">
+    <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Close image">Close</button>
+    <img id="lightboxImg" class="lightbox-img" alt="" />
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
 
   <script>
-  document.getElementById("y").textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-  const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.style.display = (mobileMenu.style.display === "block") ? "none" : "block";
-  });
-  mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mobileMenu.style.display="none"));
+    menuBtn.addEventListener("click", () => {
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", String(!expanded));
+      mobileMenu.classList.toggle("open");
+    });
 
-  // ✅ Step 1: mailto-based pilot request (no server / no cloud)
-  const form = document.getElementById("leadForm");
-  const hint = form.querySelector(".hint");
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    const fd = new FormData(form);
-    const name = String(fd.get("name") || "").trim();
-    const company = String(fd.get("company") || "").trim();
-    const email = String(fd.get("email") || "").trim();
-    const msg = String(fd.get("msg") || "").trim();
+    const revealEls = document.querySelectorAll("[data-reveal]");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
 
-    const subject = encodeURIComponent("NeuroChoice Pilot Request");
-    const body = encodeURIComponent(
-`Hello NeuroChoice Team,
+    revealEls.forEach((el) => observer.observe(el));
 
-I would like to request an in-store pilot.
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxTriggers = document.querySelectorAll(".lightbox-trigger");
 
-Name: ${name}
-Company: ${company}
-Email: ${email}
+    const closeLightbox = () => {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+    };
 
-Store/Pilot details:
-${msg || "(not provided)"}
+    lightboxTriggers.forEach((img) => {
+      img.addEventListener("click", () => {
+        const figcaption = img.parentElement.querySelector("figcaption");
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = figcaption ? figcaption.textContent : "";
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
 
-Best regards,
-${name}`
-    );
+      img.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          img.click();
+        }
+      });
+    });
 
-    // Update UX text (optional)
-    if (hint) hint.textContent = "Opening your email client… please click Send to submit your request.";
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
 
-    // Open user's email client
-    window.location.href = `mailto:info@neurochoice.uk?subject=${subject}&body=${body}`;
-  });
-</script>
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("open")) {
+        closeLightbox();
+      }
+    });
 
+  </script>
 </body>
 </html>
